@@ -7,7 +7,7 @@ import datetime
 
 def send_api_request(city, request):
     url = 'https://api.openweathermap.org/data/2.5/weather?'
-    api_key = 'b7adec848b0680cb9a2518e37b256861'
+    api_key = ''
     payload = {'q': city, 'units': 'metric', 'appid': api_key, 'exclude': 'minutely'}
     send = requests.get(url, params=payload)
     if send.status_code != 200:
