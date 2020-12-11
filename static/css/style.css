@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  background: white;
+  color: black;
+  font-family: Helvetica, sans-serif;
+  height: 100vh
+
+}
+
+h1 {
+  padding: 1em 2em
+}
+
+.main-page{
+    margin: 3em 3em;
+  position: relative;
+  display: flex
+}
+
+.forecast-page {
+  margin: 1em 3em;
+  position: relative;
+}
+
+.forecast-page h1 {
+    text-align: center
+}
+
+.icon-start {
+    float: left;
+    margin-top: 150px
+}
+
+.texts {
+    float: right;
+    padding-left: 2em;
+}
+
+.texts p {
+    padding-right: 3em
+}
+
+.forecast {
+  background-color: white;
+  margin-top: 4em;
+  padding-left: 1em;
+  color: black;
+  position: absolute;
+  border: none;
+  line-height: 1.6;
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-shadow: 3px 5px 5px 5px #888888
+}
+
+.temp-icon {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.forecast h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.small-temp {
+  justify-content: center;
+}
+
+.content-weather {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-weather p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.search-bar {
+  height: 5em;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+.search-bar form {
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.search-bar input {
+    border-radius: 30px
+}

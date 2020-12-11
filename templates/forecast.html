@@ -1,0 +1,18 @@
+{% extends 'base-home.html' %}
+
+{% block current %}
+    {% if message %}
+        <button class="btn btn-primary"><a href="/" class="button">{{ message }}</a></button>
+    {% else %}
+        <div class="forecast">
+            <h3 class="title-forecast">{{ city|title }}</h3>
+            <div class="temp-icon">
+              <img src="http://openweathermap.org/img/wn/{{ icon }}@2x.png" alt="icon">
+              <h2 class="temperature">{{ temp }} °C</h2>
+            </div>
+            <h4>{{ description }}</h4><br>
+            <p>Min Temp: {{ min_temp }} °C</p>
+            <p>Max Temp: {{max_temp}} °C</p>
+        </div>
+    {% endif %}
+{% endblock %}
